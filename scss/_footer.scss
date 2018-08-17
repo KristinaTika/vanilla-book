@@ -1,0 +1,17 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    background: rgb(124, 204, 204);
+    color: aliceblue;
+    text-align: center;
+    margin-top: 20px;
+}
