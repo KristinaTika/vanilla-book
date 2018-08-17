@@ -4,18 +4,11 @@ import { post } from "./APIService.js";
 class LoginService {
 
     loginUser(data) {
-        return post(loginEndpoint, data)
-            // .then((response) => {
-            //     return response.status === 200 ? true : false
-            // })
+        return post(loginEndpoint, data);
     }
 
     registerUser(data) {
-        return post(registerEndpoint, data)
-            // .then((response) => {
-            //     return response.status === 200 ? true : false
-            // })
-           
+        return post(registerEndpoint, data);     
     }
 }
 

@@ -99,17 +99,17 @@ const loginHandler = (event) => {
 
 const initPage = () => {
 
-    data.getProfile()
-        .then((profile) => {
-            localStorage.setItem("user-profile", JSON.stringify(profile));
-        })
-
     ui.displayHeader();
     createFeedPage();
     initUsersPage();
     initFeedPage();
     setTimeout(initSinglePostPage, 1000);
     initProfilePage();
+
+    data.getProfile()
+        .then((profile) => {
+            localStorage.setItem("user-profile", JSON.stringify(profile));
+        });
 }
 
 const createFeedPage = () => {
